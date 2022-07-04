@@ -1,0 +1,49 @@
+.operacoes-bancarias {
+    padding: 2em 1em 0;
+    text-align: center;
+}
+
+.formulario-operacoes__input {
+    margin: 0.5em;
+    box-sizing: border-box;
+}
+
+.valor {
+    width: 100px;
+}
+
+.formulario-operacoes__transferir-para {
+    display: inline-block;
+}
+
+.alinhamento-da-div {
+    display: inline;
+    position: relative;
+}
+
+.transferir-para__campo-pesquisa {
+    width: 150px;
+}
+
+.transferir-para__resultados {
+    display: inline-block;
+    position: absolute;
+    top: calc(100% + 17px);
+    left: 10px;
+    width: 149px;
+    max-height: 125px;
+    overflow-y: scroll;
+    z-index: 3;
+}
+
+.resultados__item {
+    background: var(--branco);
+    text-align: initial;
+    padding: 7px;
+}
+
+.resultados__item:hover {
+    background: var(--cinza);
+    color: var(--branco);
+    cursor: pointer;
+}

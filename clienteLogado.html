@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/fichacliente.css">
+    <link rel="stylesheet" href="./CSS/operacoesbancarias.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-principal"><strong class="negrito-dourado">B</strong>anco <strong
+                class="negrito-dourado">R</strong>ico <strong class="negrito-dourado">$</strong></h1>
+    </header>
+
+    <main>
+        <h2 class="main__boas-vindas"></h2>
+        <div class="ficha-cliente">
+            <p class="ficha-cliente__dado nome">Nome:</p>
+            <p class="ficha-cliente__dado cpf">CPF:</p>
+        </div>
+        <div class="operacoes-bancarias">
+            <h2 class="titulo-da-div">Operações Bancárias</h2>
+            <form class="operacoes-bancarias__formulario-operacoes">
+                <input type="number" placeholder="Valor" class="formulario-operacoes__input valor">
+                <select class="formulario-operacoes__input escolha-operacao">
+                    <option class="escolha-operacao__opcao">Depositar</option>
+                    <option class="escolha-operacao__opcao">Sacar</option>
+                    <option class="escolha-operacao__opcao">Transferir</option>
+                </select>
+                <div class="formulario-operacoes__transferir-para">
+                    <div class="alinhamento-da-div">
+                        <input type="text" placeholder="Transferir para..."
+                            class="formulario-operacoes__input transferir-para__campo-pesquisa pesquisa-nome">
+                        <ul class="transferir-para__resultados resultados-nome">
+                        </ul>
+                    </div>
+                    <div class="alinhamento-da-div">
+                        <input type="text" placeholder="Qual conta?"
+                            class="formulario-operacoes__input transferir-para__campo-pesquisa pesquisa-conta">
+                        <ul class="transferir-para__resultados resultados-conta">
+                        </ul>
+                    </div>
+                </div>
+                <span class="operacoes-bancarias__erro mensagem-de-erro"></span>
+                <input type="submit" value="Operar" class="formulario-operacoes__botao-operar">
+            </form>
+        </div>
+    </main>
+    <script src="./js/classes.js"></script>
+    <script src="./js/clientesEContas.js"></script>
+    <script src="./js/preencherDadosDoCliente.js"></script>
+    <script src="./js/seletorEInputTransferir.js"></script>
+    <script src="./js/verificaErros.js"></script>
+    <script src="./js/operacoesBancarias.js"></script>
+</body>
+
+</html>

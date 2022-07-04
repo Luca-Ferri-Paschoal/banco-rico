@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    --verde-fundo: #258d25a1;
+    --dourado: #e7e732;
+    --cinza: #646464;
+    --branco: #fff;
+    --vermelho: #f00;
+    --fonte-padrao: "Kdam Thmor Pro";
+}
+
+body {
+    background: var(--verde-fundo);
+    font-family: var(--fonte-padrao);
+    font-size: 17px;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--cinza);
+    padding: 20px 40px;
+}
+
+.titulo-principal {
+    font-size: 2em;
+    color: var(--branco);
+}
+
+.negrito-dourado {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--dourado);
+}
+
+.mensagem-de-erro {
+    margin: 0.5em 0;
+    font-size: 0.8em;
+    color: var(--vermelho);
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+
+.formulario-login__input, .formulario-operacoes__input {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-family: var(--fonte-padrao);
+    padding: 5px;
+    font-size: 1em;
+}
+
+.formulario-login__input::placeholder, .operacoes-bancarias__input::placeholder {
+    color: var(--cinza);
+}
+
+.formulario-login__botao-login, .formulario-operacoes__botao-operar {
+    background: var(--dourado);
+    border: 3px solid var(--branco);
+    border-radius: 14px;
+    padding: 5px 20px;
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--cinza);
+    display: block;
+    margin: 1em auto 0;
+}
+
+.formulario-login__botao-login:active, .formulario-operacoes__botao-operar:active {
+    background: var(--cinza);
+    color: var(--dourado);
+    cursor: pointer;
+}
+
+.esconder {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .titulo-principal {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+
+    .titulo-principal {
+        font-size: 20px;
+    }
+}

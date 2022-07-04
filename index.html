@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Rico</title>
+    <link rel="stylesheet" href="./../CSS/reset.css">
+    <link rel="stylesheet" href="./../CSS/style.css">
+    <link rel="stylesheet" href="./../CSS/login.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-principal"><strong class="negrito-dourado">B</strong>anco <strong
+                class="negrito-dourado">R</strong>ico <strong class="negrito-dourado">$</strong></h1>
+    </header>
+
+    <main>
+        <div class="login">
+            <h2 class="login__titulo">Acesse sua Conta:</h2>
+            <form class="formulario-login">
+                <span class="formulario-login__erro mensagem-de-erro"></span>
+                <label class="formulario-login__preencha">Nome: <input type="text"
+                        placeholder="Nome de usuário" class="formulario-login__input" id="nome-usuario"></label>
+                <label class="formulario-login__preencha">Senha: <input type="password"
+                        placeholder="Senha" class="formulario-login__input" id="senha-usuario"></label>
+                <input type="submit" value="Login" class="formulario-login__botao-login">
+            </form>
+        </div>
+    </main>
+    <script src="./../js/classes.js"></script>
+    <script src="./../js/clientesEContas.js"></script>
+    <script src="./../js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 91px);
+}
+
+.login__titulo {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1em;
+}
+
+.formulario-login__preencha {
+    display: block;
+    margin: 1em 0;
+}
